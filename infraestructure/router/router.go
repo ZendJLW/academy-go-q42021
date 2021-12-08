@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+//constantes de rutas
 const SearchPokemon = "/buscarPokemon"
 const ListPokemon = "/listarPokemon"
 const ListPokemonConcurrently = "/listarPokemonConcurrently"
