@@ -10,7 +10,7 @@ import (
 
 func main() {
 	controller.LlenarPokedex()
-	router.Listen()
+	router.Listen() //Rutas manejadas desde router.go
 
 	fmt.Println("Servidor listo escuchando en " + router.Port)
 	log.Fatal(http.ListenAndServe(router.Port, nil))

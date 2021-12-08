@@ -10,7 +10,7 @@ const ListPokemon = "/listarPokemon"
 const ListPokemonConcurrently = "/listarPokemonConcurrently"
 const Port = ":8081"
 
-func Listen() {
+func Listen() { // se añadieron los handlers de las rutas
 	http.HandleFunc(ListPokemon, func(w http.ResponseWriter, peticion *http.Request) {
 		controller.ListarPokemones(w, peticion)
 	})
