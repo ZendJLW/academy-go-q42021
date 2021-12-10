@@ -61,7 +61,6 @@ func BuscarPokemones(w http.ResponseWriter, peticion *http.Request) {
 
 func buscarPokemonPorId(id int) (Model.Pokemon, bool) {
 	for _, v := range pokedex {
-		//fmt.Printf("2**%d = %d\n", i, v)
 		if v.Id == id {
 			return v, false
 		}
